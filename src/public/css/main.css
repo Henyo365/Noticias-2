@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: Sans-Serif;
+    line-height: 1.5em;
+    background-color: white;
+    
+}
+
+.logoid{
+   display: flex;
+   margin:auto;
+   justify-content: center;
+   align-items: center;
+}
+
+.logoid img{
+    margin-top: 20px;
+    margin-bottom:10px;
+    height: 100px;
+
+ }
+
+.header__box {
+  width: 100%;
+}
+
+
+.header__nav_list {
+  display: flex;
+  background-color: rgb(16, 2, 141);
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.list__item{
+  text-decoration: none;
+  color: white;
+  padding: 0px 20px 0px 20px;
+  font-size: 18px;
+  border-style: solid;
+  border-width: 0px 1px 0px 1px;
+  border-color: #3E3E3E;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+
+  }
+
+.list__item:hover {
+  background-color: #3E3E3E;
+  transition-duration: 0.5s;
+  }
+
+.main__box {
+  display: flex;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.main__box__title{
+  display: flex;
+  text-align: center;
+  margin: 20px auto;
+  
+}
+
+.main__title {
+  
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  flex-grow: 1;
+  margin-left: 120px;
+}
+.main_añadir {
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+  padding-right: 25px;
+}
+
+.main__section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section__div {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px 0px 1px 0px;
+  border-color: #3E3E3E;
+
+}
+
+.div__img {
+  width: 100px;
+  height: 100px;
+}
+
+.div__texto {
+  margin-left: 15px;
+  font-family: 'Inter', sans-serif; 
+  font-weight: 400;
+}
+
+.div__texto__link{
+  text-decoration: none;
+  color: black;
+  font-family: 'Inter', sans-serif; 
+  font-weight: 600;
+}
+
+.footer__box {
+  padding: 22px 10px 20px 10px;
+  background-color: #e6e6e6;
+}
+
+  .footer__link__texto {
+    text-decoration: none;
+    color: black;
+    font-family: 'Inter', sans-serif; 
+    font-weight: 300;
+  }
+  
+
+  @media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 12px 0px;
+    }
+  }
+  

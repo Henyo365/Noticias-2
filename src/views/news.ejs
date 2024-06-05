@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="../public/css/styleslogin.css">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Otras Noticias</title>
+ <%- include("partials/head2") -%>
+ </head>
+
+ <body>
+
+    <%- include("partials/navigation2") %>
+    <header class="header__box">
+        <nav class="header__nav">
+            <li class="header__nav_list">
+                <ul><a class="list__item" href="/">INICIO</a></ul>
+                <ul><a class="list__item"  href="/libros">LIBROS</a>	</ul>
+                <ul><a  class="list__item" href="/news">OTRAS NOTICIAS</a>	</ul>
+            </li>			
+        </nav>
+    </header>
+  <% news.forEach((article) => { %>
+    <img style="width: 800px;" src="<%= article.imageUrl %>" alt="Article Image">
+    <h2><%= article.title %></h2>
+    <p><%= article.description %></p>
+    <p><%= article.content %></p>
+    <a>
+        <a href="<%= article.id %>" class="btn btn-primary">Ver</a> 
+        
+    </a>
+    
+    <hr>
+  <% }); %>
+</body>
+</html>

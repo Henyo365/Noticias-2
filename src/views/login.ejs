@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../public/css/styleslogin.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agregar Noticias</title>
+    <%- include("partials/head2") -%>
+</head>
+<body>
+    <%- include("partials/navigation2") %>
+    <header class="header__box">
+      <nav class="header__nav">
+          <li class="header__nav_list">
+              <ul><a class="list__item" href="/">INICIO</a></ul>
+              <ul><a class="list__item"  href="#">LIBROS</a>	</ul>
+              <ul><a  class="list__item" href="/news">OTRAS NOTICIAS</a>	</ul>
+          </li>			
+      </nav>
+  </header>
+
+    <form class="loginformulario">
+        <h1 class="title">LOGIN</h1>
+        <label>
+          <i class="fa-solid fa-user"></i>
+          <input type='text' placeholder="usuario" id='username' onChange={cambio} name='username' ></input>
+        </label>
+        <label>
+          <i class="fa-solid fa-lock"></i>
+          <input type='password' placeholder="contraseña" id='password'></input>
+        </label>
+        <a href="#" className='link1'>¿No tienes una cuenta?</a>
+        <a href="#" className='link2'>¿olvidaste la contraseña?</a>
+    
+        <button id='button'>login</button>
+    
+        </form> 
+    
+</body>
+</html>
